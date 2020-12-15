@@ -1,0 +1,8 @@
+---
+# Define MOTD role
+
+- name:  Write MOTD file
+  template:
+    src: "{{ motd_template }}"
+    dest: "{{ motd_file }}"
+    mode: 0644
