@@ -1,2 +1,12 @@
 ---
 # tasks file for motd
+
+# Write motd configuration
+- name: Write configuration template
+  template:
+    src: "{{ motd_template|ternary(motd_template, 'empty') }}.j2"
+    dest: "{{ motd_file }}"
+    mode: 0644
+    owner: root
+    group: root
+

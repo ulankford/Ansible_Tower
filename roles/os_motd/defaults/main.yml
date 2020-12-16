@@ -1,2 +1,5 @@
 ---
 # defaults file for motd
+motd_file:  "/etc/motd"
+motd_template: "empty"
+motd_message: ""
