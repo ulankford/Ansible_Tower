@@ -1,10 +1,11 @@
 ---
 - hosts: localhost
+  connection: local
   become: true
   roles:
     - os_motd
 
   vars:
-    motd_message: "This is the motd talking"
+    motd_message: "This is the motd talking\n"
     motd_template: "yoda"
 
