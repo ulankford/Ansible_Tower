@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include os_raw_python_bootstrap"
+      include_role:
+        name: "os_raw_python_bootstrap"
