@@ -3,3 +3,8 @@
   remote_user: root
   roles:
     - os_motd
+
+  vars:
+    motd_message: "This is the motd talking"
+    motd_template: "yoda"
+
